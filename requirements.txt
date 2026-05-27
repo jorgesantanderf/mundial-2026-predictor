@@ -1,0 +1,62 @@
+# ==============================================================================
+# Mundial 2026 Predictor - Dependencies
+# Python 3.11+ required
+# ==============================================================================
+
+# --- Data manipulation ---
+pandas>=2.1.0,<3.0.0
+numpy>=1.26.0,<2.0.0
+pyarrow>=14.0.0
+
+# --- Machine Learning ---
+scikit-learn>=1.4.0,<2.0.0
+lightgbm>=4.3.0
+xgboost>=2.0.3
+optuna>=3.5.0
+imbalanced-learn>=0.12.0
+
+# --- Statistical analysis ---
+statsmodels>=0.14.1
+scipy>=1.12.0
+
+# --- Interpretability ---
+shap>=0.44.0
+
+# --- Facial analysis ---
+# Note: deepface requires tensorflow which is heavy; install in Colab with GPU
+deepface>=0.0.89
+opencv-python>=4.9.0
+Pillow>=10.2.0
+# Optional, more academic but heavier:
+# py-feat>=0.6.0  # uncomment if using py-feat instead of DeepFace
+
+# --- Web scraping & data collection ---
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+lxml>=5.1.0
+selenium>=4.18.0
+fake-useragent>=1.4.0
+
+# --- API clients ---
+python-dotenv>=1.0.0  # For .env file management
+
+# --- Visualization ---
+matplotlib>=3.8.0
+seaborn>=0.13.0
+plotly>=5.18.0
+
+# --- Dashboard ---
+streamlit>=1.31.0
+streamlit-aggrid>=0.3.4
+
+# --- Notebooks ---
+jupyter>=1.0.0
+ipywidgets>=8.1.0
+tqdm>=4.66.0
+
+# --- Code quality ---
+black>=24.0.0
+flake8>=7.0.0
+
+# --- Testing ---
+pytest>=8.0.0
